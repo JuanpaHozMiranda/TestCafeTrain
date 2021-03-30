@@ -1,0 +1,15 @@
+dist: trusty
+addons:
+  chrome: stable
+language: node_js
+node_js:
+  - stable
+branches:
+  only:
+  - main
+cache:
+  directories:
+    - "node_modules"
+script:
+  - npm install
+  - npm run test
