@@ -15,6 +15,7 @@ test('My first test', async t =>{
 });
 
 test('My Second test', async t =>{
+  await t.debug();
   await t
     .typeText(page.userTexbox, 'John Smith').expect(page.userTexbox.value).eql('John Smith')
     .typeText(page.mailTexbox, 'fulano@gmail.com').expect(page.mailTexbox.value).eql('fulano@gmail.com')
