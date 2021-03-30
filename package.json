@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "test": "testcafe chrome:headless tests/Firts.js --reporter spec,html:report/report.html"
+    },
+    "dependencies": {
+        "testcafe": "^1.13.0",
+        "testcafe-reporter-html": "^1.4.6",
+        "typescript": "^4.2.3"
+    },
+    "devDependencies": {
+        "chai": "^4.3.4"
+    }
+}
